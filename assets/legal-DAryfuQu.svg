@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" width="96" height="96">
+  <title>Priya Hale, Legal &amp; Brand Compliance</title>
+  <defs>
+    <path id="leg-face" d="M48 23.5 C55.6 23.5 60.8 28 61.2 35.6 L60.8 43.4 C60.4 47.6 59 51 57 53.8 L53.2 58.6 Q48 62.4 42.8 58.6 L39 53.8 C37 51 35.6 47.6 35.2 43.4 L34.8 35.6 C35.2 28 40.4 23.5 48 23.5 Z"/>
+    <path id="leg-bob" d="M30.6 58.4 L30.2 31 C30.4 20 38 13.4 48 13.4 C58 13.4 65.6 20 65.8 31 L65.6 50 L66.8 58.4 Z"/>
+    <path id="leg-curtL" d="M43.4 15 C36 16.2 31.8 22 31.4 31 L30.6 58.4 L39.4 58.4 C37.8 53 36.6 47 36.6 40 C36.6 31 39.2 22.4 43.4 15 Z"/>
+    <path id="leg-curtR" d="M43.4 15 C52.4 14 60.6 16 64 24 C65.6 30 65.4 40 65.6 50 L66.8 58.4 L57.4 58.4 C59 52.4 59.8 46 59.8 40 C59.8 32.4 57.8 27.6 53.4 26.2 C49.6 25 45.4 26.4 41.6 30 C42 24.4 42.6 19.4 43.4 15 Z"/>
+    <path id="leg-suit" d="M2 96 L3.6 85 C5 77.4 14.6 73.4 27.6 71.2 L39.6 68 L56.4 68 L68.4 71.2 C81.4 73.4 91 77.4 92.4 85 L94 96 Z"/>
+    <clipPath id="leg-cFace"><use href="#leg-face"/></clipPath>
+    <clipPath id="leg-cSuit"><use href="#leg-suit"/></clipPath>
+    <clipPath id="leg-cR"><use href="#leg-curtR"/></clipPath>
+    <clipPath id="leg-cL"><use href="#leg-curtL"/></clipPath>
+  </defs>
+  <rect width="96" height="96" fill="#f1f3f5"/>
+  <path d="M8 13 H76 L86 23 V96 H8 Z" fill="#e2e6ea"/>
+  <path d="M8 9.5 H30 L27.4 13 H8 Z" fill="#d63f28"/>
+  <g transform="translate(-9.6 -6.4) scale(1.2)">
+    <!-- back of the bob -->
+    <use href="#leg-bob" fill="#1e1a1b"/>
+    <!-- neck, mostly hidden by the collar -->
+    <path d="M43.6 55 C44 59 44 61 43.6 64 L52.4 64 C52 61 52 59 52.4 55 Z" fill="#a47d66"/>
+    <path d="M43.8 56.6 L52.2 56.6 L52.4 61 Q48 63.4 43.6 61 Z" fill="#8f6c57"/>
+    <!-- suit -->
+    <use href="#leg-suit" fill="#23272d"/>
+    <g clip-path="url(#leg-cSuit)">
+      <path d="M3.6 85 C5 77.4 14.6 73.4 27.6 71.2 L31 70.4 C22 74 16.4 79 15 85 L13.4 96 L2 96 Z" fill="#2d3238"/>
+      <path d="M68.4 71.2 C81.4 73.4 91 77.4 92.4 85 L94 96 L76 96 C78 88 78 80 72 72 Z" fill="#1a1d21"/>
+      <!-- asymmetric wrap front: the overlapping panel a step lighter -->
+      <path d="M38 68 L58 68 C56 76 54.4 84 54 96 L30 96 C34 86 37 77 38 68 Z" fill="#2a2f35"/>
+      <path d="M58 68 L58.8 68 C56.8 76 55.2 84 54.8 96 L54 96 C54.4 84 56 76 58 68 Z" fill="#d63f28"/>
+    </g>
+    <!-- high standing collar wrapped up to the jaw, piped in vermilion -->
+    <path d="M41.8 59.6 Q48 62.8 54.2 59.6 L56.4 68.4 Q48 72 39.6 68.4 Z" fill="#2f343b"/>
+    <path d="M48 61.6 Q51.6 61.2 54.2 59.6 L56.4 68.4 Q52 70.2 48 70.6 Z" fill="#262a30"/>
+    <path d="M41.8 59.6 Q48 62.8 54.2 59.6 L54.4 60.6 Q48 63.8 41.6 60.6 Z" fill="#d63f28"/>
+    <!-- slim gold bar pin -->
+    <rect x="42.4" y="65" width="3.6" height=".9" rx=".45" fill="#d4b06a"/>
+
+    <!-- face: light plane, shadow plane -->
+    <use href="#leg-face" fill="#c69c82"/>
+    <g clip-path="url(#leg-cFace)">
+      <path d="M55.2 20 L66 20 L66 64 L49.2 64 L57.4 45 Z" fill="#b1886f"/>
+      <path d="M48.4 39.6 L50.8 47.2 L47.4 47.8 Z" fill="#b1886f"/>
+      <path d="M45.2 47.2 Q48 48.8 51 47.2 Q48 49.6 45.2 47.2 Z" fill="#94705b"/>
+      <!-- composed mouth, one corner held a touch higher -->
+      <path d="M44.6 52.6 Q47.4 52 51.8 51.6 Q48.4 53.8 44.6 52.6 Z" fill="#7d4a42"/>
+      <path d="M45.4 53 Q48.2 54.8 51 52.4 Q48.4 55.4 45.4 53 Z" fill="#9c6359"/>
+    </g>
+    <!-- level, slightly narrowed eyes; one brow raised -->
+    <path d="M39.4 41 Q42.2 39.2 45.2 40.2 Q42.6 43.4 39.4 41 Z" fill="#ece5df"/>
+    <path d="M50.8 40.2 Q53.8 39.2 56.6 41 Q53.4 43.4 50.8 40.2 Z" fill="#ddd5cf"/>
+    <circle cx="42.8" cy="41.2" r="1.45" fill="#2a1d1a"/>
+    <circle cx="53.4" cy="41.2" r="1.45" fill="#2a1d1a"/>
+    <path d="M39 41.2 Q41.6 39.4 45.6 39.9 M50.4 39.9 Q54.4 39.4 57 41.2" stroke="#1c1515" stroke-width="1.1" fill="none" stroke-linecap="round"/>
+    <path d="M39 37 L45.2 36.2" stroke="#231c1c" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+    <path d="M50.6 35.6 Q53.6 32.6 57.2 35" stroke="#231c1c" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+    <!-- sharp bob: two blunt curtains swept from a side part -->
+    <use href="#leg-curtL" fill="#2a2526"/>
+    <g clip-path="url(#leg-cL)">
+      <path d="M30 40 C31 28 35.4 20 42 16 L44 16 C39.6 22 37 30 36.4 40 Z" fill="#3c3537"/>
+    </g>
+    <use href="#leg-curtR" fill="#252021"/>
+    <g clip-path="url(#leg-cR)">
+      <path d="M44 16 C52 15 58.4 17.6 61.4 23 L60 24 C57 20 51 17.4 44 17.6 Z" fill="#4a4244"/>
+      <path d="M60 18 L70 18 L70 60 L60.4 60 C62.6 46 62.6 30 60 18 Z" fill="#1a1617"/>
+    </g>
+  </g>
+</svg>
