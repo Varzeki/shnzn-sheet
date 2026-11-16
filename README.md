@@ -7,7 +7,7 @@ A companion app for one Carbon 2185 character, Tobias "Toby" Marrow: a live char
 ## Use
 Open https://shenzhen.waverleyhouse.casa. Everything is saved in your browser. On a phone or tablet you can install it to the home screen.
 
-**Live sync:** Settings → Live sync. The player shares their sheet; the DM follows it read-only. You need an MQTT broker with secure WebSockets (wss://) and your own logins. No broker or credentials are included here.
+**Live sync:** the site follows Toby's sheet live and read-only out of the box, using a built-in read-only login. Sharing the sheet needs a separate private login, entered in Settings → Live sync.
 
 ## Credits
 - Fonts: Barlow, Barlow Condensed, Chakra Petch, IBM Plex Mono, Noto Sans SC (SIL Open Font License 1.1; licences in /fonts).
