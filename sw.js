@@ -1,7 +1,17 @@
 // Offline cache. Pages are network-first so a new build shows on the next launch. Hashed build files and fonts
 // are cache-first (their names change with their content); other files (portrait, PDF) refresh in the background.
-const CACHE = 'shnzn-v9';
-self.addEventListener('install', () => { self.skipWaiting(); });
+const CACHE = 'shnzn-v10';
+// the page itself is stored at install, so the app opens offline after a single visit
+self.addEventListener('install', (e) => {
+  e.waitUntil(caches.open(CACHE).then((c) => c.addAll(['/', '/manifest.webmanifest', '/icon.svg'])).catch(() => {}).then(() => self.skipWaiting()));
+});
+// the page then lists the files it loaded before this worker took control (scripts, styles, fonts, pictures)
+self.addEventListener('message', (e) => {
+  const urls = e.data && e.data.cache;
+  if (!Array.isArray(urls)) return;
+  const mine = [...new Set(urls)].filter((u) => typeof u === 'string' && u.startsWith(self.location.origin)).slice(0, 200);
+  e.waitUntil(caches.open(CACHE).then((c) => Promise.all(mine.map((u) => c.match(u).then((hit) => hit || fetch(u).then((r) => (r.ok ? c.put(u, r) : null)).catch(() => null))))));
+});
 self.addEventListener('activate', (e) => {
   e.waitUntil(caches.keys().then((ks) => Promise.all(ks.filter((k) => k !== CACHE).map((k) => caches.delete(k)))).then(() => self.clients.claim()));
 });
